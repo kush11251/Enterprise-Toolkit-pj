@@ -1,0 +1,8 @@
+version: '3'
+services:
+  app:
+    image: ubuntu:latest
+    working_dir: /app
+    command: bash -c "./main.sh"
+    volumes:
+      - .:/app
